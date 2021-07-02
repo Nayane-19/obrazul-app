@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     font-size: 10px;
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto', sans-serif;
     background-color: var(--white);
   }
   ul,li{

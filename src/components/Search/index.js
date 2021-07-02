@@ -1,6 +1,5 @@
 import React, {useEffect, useState } from 'react';
-import {Section} from '../../styles/styles'
-import {SearchContent, FormSearch,InputSearch,FaSearchCustom} from './SearchElements'
+import {SearchContainer, SearchContent, FormSearch,InputSearch,FaSearchCustom} from './SearchElements'
 
 function Search () {
     const [searchText, setSearchText] = useState('');
@@ -21,7 +20,7 @@ function Search () {
       }
     };
     return(
-        <Section>
+        <SearchContainer>
         <SearchContent>
         <FormSearch>
           <InputSearch
@@ -33,7 +32,7 @@ function Search () {
           <FaSearchCustom />
         </FormSearch>
         </SearchContent>
-        </Section>
+        </SearchContainer>
     );
 }
 
