@@ -6,7 +6,6 @@ import Api from '../../api'
      try {
 
          const {data} = yield call(Api.get, 'recruitment/products/')
-         yield console.log(data);
          yield put(AddList(data))
      } catch (error) {
          

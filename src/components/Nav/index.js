@@ -1,12 +1,18 @@
 import React from 'react';
 import Search from '../Search/index';
+import Logo from '../../images/Logo.png'
+import {Image, NavContent, Paragraph} from './NavElements'
+import {Section} from '../../styles/styles'
 
 function Nav () {
     return(
-        <div>
-            <h1>Qualquer coisa</h1>
+        <Section>
+            <NavContent>
+            <Image src={Logo} alt="Logo"/>
             <Search />
-        </div>
+            <Paragraph>Compre sem sair do conforto da sua casa</Paragraph>
+            </NavContent>
+        </Section>
 
     );
 }

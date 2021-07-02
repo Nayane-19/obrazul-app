@@ -1,34 +1,18 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { requestHTTP } from '../../store/actions';
+import React from 'react';
 import { CardContainer, CardBody, CardTitle, CardButton, CardContent, CardImg } from "./CardElements";
 
 
 
-function Card() {
-
-    const dispatch=useDispatch();
-    const state=useSelector(state => state.products)
-
-    useEffect(()=> {
-        dispatch(requestHTTP())
-      }, [])
+function Card({product}) {
 
   return(
-    <CardContainer>
-        {state.products.products.map((product) => {   
-       return (    
-           <>   
+    <CardContainer>   
         <CardBody key={product.ean}>
       <CardImg src={product.picture}/>
       <CardTitle>{product.name}</CardTitle>
-      <CardContent>{product.price}</CardContent>
+      <CardContent>{product.fullname}</CardContent>
     </CardBody>
-    <CardButton className="card__btn">View Recipe</CardButton>
-    </>
-    )     
-})}
-
+    <CardButton className="card__btn">R$ {product.price}</CardButton>
   </CardContainer>
   );
 }

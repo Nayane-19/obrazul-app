@@ -2,10 +2,16 @@ import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
 
 
+export const SearchContainer=styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
+
 export const SearchContent=styled.div`
     position: relative;
-    width: 300px;
-    margin-top: 5rem;
+    width: 400px;
 `
 
 export const FormSearch=styled.form`
