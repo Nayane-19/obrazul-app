@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 export const CardContainer=styled.div`
     overflow: hidden;
-    box-shadow: 0 2px 20px #e1e5ee;
+    box-shadow: 0 2px 20px ${props => props.theme.pageBackground};
     border-radius: 1rem;
     border: solid 1px cornflowerblue;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: white;
+    background-color: ${props => props.theme.cardBacground};
     transition: transform 200ms ease-in;
     margin-top:6rem;
     :hover {
@@ -32,11 +32,13 @@ export const CardImg=styled.img`
 export const CardTitle=styled.h2`   
     padding: 2rem 1rem 1rem;
     font-size: 2rem;
+    color: ${props => props.theme.titleColor};
 `;
 
 export const CardContent=styled.p`
     padding: 1rem; 
     font-size: 1.5rem;
+    color: ${props => props.theme.titleColor};
 `;
 
 export const CardButton=styled.button`

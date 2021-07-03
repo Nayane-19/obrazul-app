@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Section=styled.section`
     display:flex;
     flex-direction: column;
+    background-color: ${props => props.theme.pageBackground};
 `;
 
 export const Container=styled.div`
