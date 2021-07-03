@@ -1,17 +1,15 @@
-import {Provider} from 'react-redux'
-import Store from './store'
-import Routes from './Routers'
-
+import { Provider } from "react-redux";
+import Store from "./store";
+import Routes from "./Routers";
 
 
 
 function App() {
+
   return (
-    
-   <Provider store={Store}>
-    <Routes />
-   </Provider>
-  
+      <Provider store={Store}>
+        <Routes />
+      </Provider>
   );
 }
 

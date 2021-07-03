@@ -7,11 +7,24 @@ export const SearchContainer=styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px){
+        padding: 2rem;
+        width: 100%;
+    }
 `
 
 export const SearchContent=styled.div`
     position: relative;
     width: 400px;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        width: 300px;
+    }
 `
 
 export const FormSearch=styled.form`
@@ -30,6 +43,10 @@ export const InputSearch=styled.input`
     path {
         color: var(--deep-dark);
       }
+
+      @media screen and (max-width: 768px){
+        font-size: 1.5rem;
+    }
 `;
 
 export const FaSearchCustom=styled(FaSearch)`

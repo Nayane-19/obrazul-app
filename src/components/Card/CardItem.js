@@ -3,7 +3,7 @@ import { CardContainer, CardBody, CardTitle, CardButton, CardContent, CardImg } 
 
 
 
-function Card({product}) {
+function CardItem({product}) {
 
   return(
     <CardContainer>   
@@ -12,9 +12,9 @@ function Card({product}) {
       <CardTitle>{product.name}</CardTitle>
       <CardContent>{product.fullname}</CardContent>
     </CardBody>
-    <CardButton className="card__btn">R$ {product.price}</CardButton>
+    <CardButton>R$ {product.price}</CardButton>
   </CardContainer>
   );
 }
 
-export default Card;
+export default CardItem;
