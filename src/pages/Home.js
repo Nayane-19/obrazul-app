@@ -32,15 +32,17 @@ const themes = {
 const Home = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.products);
-  const [theme, setTheme]= useState("light")
+  const [theme, setTheme]= useState("light");
 
   useEffect(() => {
     dispatch(requestHTTP());
-  }, []);
-
-  return (
+  }, [dispatch]);
+ 
     
-    // <h1>{JSON.stringify(state)}</h1>
+
+  return (    
+   
+    // <h1>{JSON.stringify(state)}</h1>  
     <ThemeProvider theme={themes[theme]}>
     <Section>      
       <Nav theme={theme} setTheme={setTheme}/>
@@ -55,5 +57,7 @@ const Home = () => {
     </ThemeProvider>
   );
 };
+
+
 
 export default Home;

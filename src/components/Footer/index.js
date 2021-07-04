@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { VscArrowUp } from "react-icons/vsc";
 import {Section} from '../../styles/styles';
@@ -13,7 +13,6 @@ const Footer = () => {
     });
   });
 
-  const [showButton, setShowButton] = useState(false);
 
   return (
     <Section>
