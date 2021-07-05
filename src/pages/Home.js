@@ -33,6 +33,7 @@ const Home = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.products);
   const [theme, setTheme]= useState("light");
+  console.log(state);
 
   useEffect(() => {
     dispatch(requestHTTP());
@@ -48,7 +49,7 @@ const Home = () => {
       <Nav theme={theme} setTheme={setTheme}/>
       <Banner />
       <Container>
-        {state.products.products.map((product) => {
+        {state && state.products && state.products.products && state.products.products.map((product) => {
           return <Card key={product.ean} product={product} />;
         })}
       </Container>

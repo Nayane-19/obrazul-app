@@ -5,20 +5,20 @@ import { Image, NavContent, Paragraph, ButtonTheme, Toggle } from "./NavElements
 import { Section } from "../../styles/styles";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
-import Api from "../../api";
+import apiAxios from "../../api/api";
 
 
 
 
 function Nav(props) {
-    const [info, setInfo] = useState({})
-    const [text,setText]= useState('');
+  const [info, setInfo] = useState({})
+  const [text,setText]= useState('');
      
  
   useEffect(() => {
     if (text){
-    fetch(`${Api}?filter[text]=${text}`)
-    .then((response) => response.json())
+    fetch(`${apiAxios}.filter[text]=${text}`)
+    // .then((response) => response.json())
     .then((response) => {
       setInfo(response)
       console.log(response);
