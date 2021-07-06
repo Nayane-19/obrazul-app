@@ -43,13 +43,12 @@ const Home = () => {
 
   return (    
    
-    // <h1>{JSON.stringify(state)}</h1>  
     <ThemeProvider theme={themes[theme]}>
     <Section>      
       <Nav theme={theme} setTheme={setTheme}/>
       <Banner />
       <Container>
-        {state && state.products && state.products.products && state.products.products.map((product) => {
+        {state?.products?.products?.map((product) => {
           return <Card key={product.ean} product={product} />;
         })}
       </Container>

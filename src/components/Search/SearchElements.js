@@ -47,6 +47,7 @@ export const InputSearch=styled.input`
       @media screen and (max-width: 768px){
         font-size: 1.5rem;
     }
+
 `;
 
 export const FaSearchCustom=styled(FaSearch)`
