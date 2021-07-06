@@ -1,5 +1,17 @@
 <h1 align="center">Obrazul App</h1>
 
+<h2 align="center">Funcionalidade Darkmode</h2>
+
+<p align="center"><img src="https://media.giphy.com/media/QfnmmEv8SzcSjmo4za/giphy.gif"/></p>
+
+<h2 align="center">Responsividade e Funcionalidade Back-to-Top</h2>
+
+<p align="center"><img src="https://media.giphy.com/media/th5RPgoWfIKw6CoFCB/giphy.gif"/></p>
+
+<h2 align="center">Campo de Busca</h2>
+
+<p align="center"><img src="https://media.giphy.com/media/9VST5LqBUPcDEFI1JQ/giphy.gif"/></p>
+
 ## Dependências
 
 - yarn add react-icons

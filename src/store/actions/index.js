@@ -8,3 +8,10 @@ export function AddList(products) {
         products:products
     };
 }
+
+export function searchList(products) {
+    return{
+        type:'PESQUISA_PRODUCTS_TO_LIST',
+        products
+    };
+}
