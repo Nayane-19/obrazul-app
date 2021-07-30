@@ -21,7 +21,7 @@ const Footer = () => {
             <VscArrowUp id="back-to-top" />
           </FooterTop>
           <FooterContent>
-          <Paragraph>Para saber mais sobre o projeto</Paragraph>
+          <Paragraph>Para saber mais sobre o projeto.</Paragraph>
           <Paragraph>Entre em contato pelo número (31) 99550-3487</Paragraph>
           </FooterContent>
             <SocialIcons>
